@@ -1,6 +1,6 @@
+# encoding: utf-8
 module AutoHtml
   class Builder
-
     @@filters = {}
 
     def initialize(text)

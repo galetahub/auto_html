@@ -1,9 +1,9 @@
-%w(base filter builder auto_html_for).each do |f|
-  require File.dirname(__FILE__) + "/auto_html/#{f}"
+# encoding: utf-8
+module AutoHtml
+  autoload :Base, 'auto_html/base'
+  autoload :Filter, 'auto_html/filter'
+  autoload :Builder, 'auto_html/builder'
+  autoload :AutoHtmlFor, 'auto_html/auto_html_for'
 end
 
-# Register built-in filters
-#
-Dir["#{File.dirname(__FILE__) + '/auto_html/filters'}/**/*"].each do |filter|
-  require "#{filter}"
-end
+require 'auto_html/railtie' if defined?(Rails)

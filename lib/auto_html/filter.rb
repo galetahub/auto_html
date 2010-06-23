@@ -1,5 +1,5 @@
+# encoding: utf-8
 module AutoHtml
-
   class Filter
     def initialize(block)
       @block = block
@@ -20,5 +20,4 @@ module AutoHtml
       end
     end
   end
-
 end
