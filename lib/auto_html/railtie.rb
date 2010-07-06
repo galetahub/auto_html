@@ -6,8 +6,8 @@ module AutoHtml
     require 'rails'
     class Railtie < Rails::Railtie
       # Register built-in filters
-      Dir["#{File.dirname(__FILE__) + '/auto_html/filters'}/**/*"].each do |filter|
-        require "#{filter}"
+      Dir["#{File.dirname(__FILE__)}/filters/*.rb"].sort.each do |path|
+        require "auto_html/filters/#{File.basename(path, '.rb')}"
       end
       
       config.after_initialize do
