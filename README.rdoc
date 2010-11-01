@@ -1,7 +1,7 @@
-= auto_html
+= Auto html
 
-Rails plugin for transforming urls to appropriate resource (image, link, YouTube, Vimeo video,...). Check out the {live demo}[http://auto-html.rors.org].
-
+Rails plugin for transforming urls to appropriate resource (image, link, YouTube, Vimeo video,...). 
+Check out the {live demo}[http://auto-html.rors.org].
 
 == Synopsis
 
@@ -53,32 +53,51 @@ Plugin is highly customizable, and you can easily create new filters that will t
 
 == Bundled filters
 
-For filter list and options they support check: http://github.com/dejan/auto_html/tree/master/lib/auto_html/filters 
+* Big words - take big words in special tags
+  
+  big_words :length => 80, :tag => "span"
 
+* Dailymotion
+  
+  dailymotion :width => 480, :height => 360
+
+* Google video
+  
+  google_video :width => 650, :height => 391
+  
+* HTML escaping
+  
+  html_escape
+  
+* Image - replace image url to url with <a>
+
+  image
+  
+* Link - replace url to url with <a>
+
+  link :target => "_blank", :rel => "nofollow"
+
+* HTML White List Sanitizer
+
+  sanitize
+
+* Simple format
+
+  simple_format
+  
+* Vimeo
+
+  vimeo :width => 440, :height => 248, :show_title => false, :fullscreen => true, :show_byline => false, :show_portrait => false
+
+* Youtube
+
+  youtube :width => 390, :height => 250
+  
+  youtube_js_api :width => 390, :height => 250
 
 == Install
 
-=== Important note on versions
-
-As from version 1.2.0 auto_html uses Rails' engine for discovering links. There are some bugs with that engine in versions under Rails 2.3.2. so it's recommended you use auto_html 1.1.2 in that case, since internal engine is used in that version.
-
-Rails::           auto_html
-<= 2.3.1::        1.1.2
->= 2.3.2::        1.2.1
-
-
-=== As a gem
-
-To enable the library in your Rails 2.1 (or greater) project, use the gem configuration method in "config/environment.rb"
-
-  Rails::Initializer.run do |config|
-    config.gem 'auto_html', :version => '~> 1.2.1', :source => 'http://gemcutter.org'
-  end
-
-=== As a Rails plugin
-
-  script/plugin install git://github.com/dejan/auto_html.git
-
+  rails plugin install git://github.com/galetahub/auto_html.git
 
 == Links:
 
