@@ -97,7 +97,7 @@ Plugin is highly customizable, and you can easily create new filters that will t
 
 == Install
 
-  rails plugin install git://github.com/galetahub/auto_html.git
+  gem 'auto_html', :git => 'git://github.com/galetahub/auto_html.git'
 
 == Links:
 
