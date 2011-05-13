@@ -12,4 +12,4 @@ module AutoHtml
   end
 end
 
-require 'auto_html/railtie' if defined?(Rails)
+require 'auto_html/engine' if defined?(Rails)
