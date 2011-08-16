@@ -11,12 +11,12 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "auto_html"
+    gem.name = "galetahub-auto_html"
     gem.summary = %{Automatically transforms urls (via domain) and includes the destination resource (Vimeo, YouTube movie, image, ...) in your document}
-    gem.email = "desimic@gmail.com"
-    gem.homepage = "http://github.com/dejan/auto_html"
+    gem.email = "galeta.igor@gmail.com"
+    gem.homepage = "https://github.com/galetahub/auto_html"
     gem.description = "Automatically transforms urls (via domain) and includes the destination resource (Vimeo, YouTube movie, image, ...) in your document"
-    gem.authors = ["Dejan Simic"]
+    gem.authors = ["Igor Galeta"]
     gem.files.exclude 'test.sqlite3'
     gem.has_rdoc = false
   end
