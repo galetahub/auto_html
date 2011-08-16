@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{auto_html}
-  s.version = "1.0.0"
+  s.name = %q{galetahub-auto_html}
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Dejan Simic"]
-  s.date = %q{2011-05-13}
+  s.authors = ["Igor Galeta"]
+  s.date = %q{2011-08-16}
   s.description = %q{Automatically transforms urls (via domain) and includes the destination resource (Vimeo, YouTube movie, image, ...) in your document}
-  s.email = %q{desimic@gmail.com}
+  s.email = %q{galeta.igor@gmail.com}
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "lib/auto_html/auto_html_for.rb",
     "lib/auto_html/base.rb",
     "lib/auto_html/builder.rb",
+    "lib/auto_html/engine.rb",
     "lib/auto_html/filter.rb",
     "lib/auto_html/filters/big_words.rb",
     "lib/auto_html/filters/dailymotion.rb",
@@ -56,7 +57,7 @@ Gem::Specification.new do |s|
     "test/unit/filters/youtube_test.rb",
     "test/unit/unit_test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/dejan/auto_html}
+  s.homepage = %q{https://github.com/galetahub/auto_html}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Automatically transforms urls (via domain) and includes the destination resource (Vimeo, YouTube movie, image, ...) in your document}
